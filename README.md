@@ -5,7 +5,7 @@ Group Name: __Fill your team name__.
 Team Mates:
 1. FARAH IRDINA BINTI AHMAD ZULKIFLEE 2215184
 2. FITRAH NUR HUMAIRA BINTI MUHAMAD RADAUDIN 2212822
-3. AINA SYAZANA
+3. AINA SYAZANA BINTI MORTADZA 2218248
 
 ## Rules
 1. You are allowed to have **3 group** members.
