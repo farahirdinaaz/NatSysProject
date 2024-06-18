@@ -22,8 +22,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** https://github.com/farahirdinaaz/NatSysProject.
+2. How many files and folders are in this repository. ***(1 mark)*** 1 readme file, and 1 images folder.
 
 
 ## Exploring github codespaces
