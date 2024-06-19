@@ -109,20 +109,20 @@ codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 3. Run the command **df** . ***(1 mark)***
 Filesystem     1K-blocks     Used Available Use% Mounted on
-overlay         32847680 10380948  20772632  34% /
+overlay         32847680 10380876  20772704  34% /
 tmpfs              65536        0     65536   0% /dev
 shm                65536        8     65528   1% /dev/shm
-/dev/root       30298176 24423160   5858632  81% /vscode
-/dev/sdb1       46127956      100  43752280   1% /tmp
-/dev/loop3      32847680 10380948  20772632  34% /workspaces
+/dev/root       30298176 24441088   5840704  81% /vscode
+/dev/sda1       46127956       96  43752284   1% /tmp
+/dev/loop5      32847680 10380876  20772704  34% /workspaces
 4. Run the command **du** . ***(1 mark)*** 
 4       ./.git/branches
 8       ./.git/objects/1b
 8       ./.git/objects/77
 8       ./.git/objects/83
-8       ./.git/objects/47
-8       ./.git/objects/71
-12      ./.git/objects/62
+12      ./.git/objects/47
+12      ./.git/objects/71
+16      ./.git/objects/62
 8       ./.git/objects/58
 12      ./.git/objects/73
 8       ./.git/objects/a6
@@ -142,14 +142,19 @@ shm                65536        8     65528   1% /dev/shm
 8       ./.git/objects/86
 8       ./.git/objects/5b
 12      ./.git/objects/1c
+12      ./.git/objects/38
+8       ./.git/objects/a4
 8       ./.git/objects/eb
 8       ./.git/objects/ab
 12      ./.git/objects/ff
 12      ./.git/objects/af
 8       ./.git/objects/74
+8       ./.git/objects/26
 8       ./.git/objects/96
+12      ./.git/objects/f4
 8       ./.git/objects/8c
 12      ./.git/objects/70
+8       ./.git/objects/6c
 8       ./.git/objects/d8
 8       ./.git/objects/91
 8       ./.git/objects/c3
@@ -164,6 +169,7 @@ shm                65536        8     65528   1% /dev/shm
 8       ./.git/objects/fa
 8       ./.git/objects/4b
 8       ./.git/objects/f9
+8       ./.git/objects/3c
 12      ./.git/objects/6e
 12      ./.git/objects/b5
 8       ./.git/objects/49
@@ -174,14 +180,17 @@ shm                65536        8     65528   1% /dev/shm
 12      ./.git/objects/f6
 8       ./.git/objects/3f
 8       ./.git/objects/a3
+8       ./.git/objects/c5
 8       ./.git/objects/cd
 8       ./.git/objects/f2
 8       ./.git/objects/b2
+8       ./.git/objects/78
 8       ./.git/objects/93
 8       ./.git/objects/81
+12      ./.git/objects/5a
 8       ./.git/objects/e9
 12      ./.git/objects/61
-8       ./.git/objects/cb
+16      ./.git/objects/cb
 12      ./.git/objects/64
 8       ./.git/objects/b9
 8       ./.git/objects/b6
@@ -189,9 +198,9 @@ shm                65536        8     65528   1% /dev/shm
 8       ./.git/objects/4a
 4       ./.git/objects/info
 12      ./.git/objects/14
-1824    ./.git/objects/pack
+1828    ./.git/objects/pack
 12      ./.git/objects/44
-2512    ./.git/objects
+2620    ./.git/objects
 8       ./.git/logs/refs/heads
 8       ./.git/logs/refs/remotes/origin
 12      ./.git/logs/refs/remotes
@@ -206,21 +215,21 @@ shm                65536        8     65528   1% /dev/shm
 12      ./.git/refs/remotes
 28      ./.git/refs
 8       ./.git/info
-2692    ./.git
+2796    ./.git
 1972    ./images
-4684    .
+4796    .
 5. Run the command **ls** . ***(1 mark)***
 README.md  images
 6. Run the command **ls -asl** . ***(1 mark)*** 
-total 36
- 4 drwxrwxrwx+ 4 codespace root  4096 Jun 18 12:33 .
- 4 drwxr-xrwx+ 5 codespace root  4096 Jun 18 12:33 ..
- 4 drwxrwxrwx+ 9 codespace root  4096 Jun 18 12:36 .git
-20 -rw-rw-rw-  1 codespace root 16902 Jun 18 12:49 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jun 18 12:33 images
+total 40
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jun 19 05:56 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jun 19 05:56 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jun 19 05:57 .git
+24 -rw-rw-rw-  1 codespace root 23044 Jun 19 06:00 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 19 05:56 images
 7. Run the command **free -h** . ***(1 mark)*** 
               total        used        free      shared  buff/cache   available
-Mem:          7.7Gi       1.5Gi       297Mi        68Mi       6.0Gi       5.9Gi
+Mem:          7.7Gi       1.4Gi       207Mi        66Mi       6.2Gi       6.0Gi
 Swap:            0B          0B          0B
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
 processor       : 0
@@ -230,7 +239,7 @@ model           : 1
 model name      : AMD EPYC 7763 64-Core Processor
 stepping        : 1
 microcode       : 0xffffffff
-cpu MHz         : 3242.920
+cpu MHz         : 3079.586
 cache size      : 512 KB
 physical id     : 0
 siblings        : 2
@@ -244,7 +253,7 @@ cpuid level     : 13
 wp              : yes
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.85
+bogomips        : 4890.86
 TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
@@ -258,7 +267,7 @@ model           : 1
 model name      : AMD EPYC 7763 64-Core Processor
 stepping        : 1
 microcode       : 0xffffffff
-cpu MHz         : 3243.160
+cpu MHz         : 3070.495
 cache size      : 512 KB
 physical id     : 0
 siblings        : 2
@@ -272,7 +281,7 @@ cpuid level     : 13
 wp              : yes
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.85
+bogomips        : 4890.86
 TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
@@ -286,7 +295,7 @@ model           : 1
 model name      : AMD EPYC 7763 64-Core Processor
 stepping        : 1
 microcode       : 0xffffffff
-cpu MHz         : 3243.160
+cpu MHz         : 3070.495
 cache size      : 512 KB
 physical id     : 0
 siblings        : 2
@@ -299,29 +308,32 @@ fpu_exception   : yes
 cpuid level     : 13
 wp              : yes
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_v
-top - 12:52:21 up  2:26,  0 users,  load average: 0.41, 0.27, 0.20
-Tasks:  19 total,   1 running,  18 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  3.2 us,  3.8 sy,  0.0 ni, 92.8 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7929.6 total,    291.3 free,   1501.9 used,   6136.3 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6044.6 avail Mem 
+top - 06:08:05 up  2:48,  0 users,  load average: 0.04, 0.20, 0.20
+Tasks:  17 total,   1 running,  16 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.2 us,  3.2 sy,  0.0 ni, 93.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,    158.6 free,   1436.9 used,   6334.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6110.3 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                           
-   2352 codespa+  20   0 1330860 105712  45312 S   1.0   1.3   0:05.56 node                                                              
-   2379 codespa+  20   0   21.5g 348544  49792 S   0.7   4.3   0:27.44 node                                                              
-      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.22 docker-init                                                       
-      7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.01 sleep  
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.03 docker-init                                                       
+      7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.01 sleep                                                             
+     85 root      20   0   12196   3352   2432 S   0.0   0.0   0:00.00 sshd                                                              
+    912 root      20   0 1983176  87184  52608 S   0.0   1.1   0:00.19 dockerd             
 10. Run the command **uname -a**. ***(1 mark)*** 
-Linux codespaces-ce7b13 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux codespaces-f96aeb 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 11. What is the available free memory in the system. ***(1 mark)***
-297 Mi
+6.0Gi
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-1K-blocks
+20772704
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
 Linux Distribution: Ubuntu 22.04.1 LTS Kernel Version: 6.5.0-1021-azure Hardware Architecture: x86_64 (64-bit)
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls lists the names of files and directories in the current directory while ls -asl lists all files (including hidden ones) in a detailed format with file sizes.__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __3243.160__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __node process with PID 2352__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** ls lists the names of files and directories in the current directory while ls -asl lists all files (including hidden ones) in a detailed format with file sizes.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+2560 4K pages
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
+3079.586
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+Node process with PID 2352
 
 ## Running your own container instance.
 
