@@ -22,8 +22,10 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** https://github.com/farahirdinaaz/NatSysProject.
-2. How many files and folders are in this repository. ***(1 mark)*** 1 readme file, and 1 images folder.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** 
+https://github.com/farahirdinaaz/NatSysProject.
+2. How many files and folders are in this repository. ***(1 mark)*** 
+1 readme file, and 1 images folder.
 
 
 ## Exploring github codespaces
@@ -311,13 +313,15 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6044.6 avail Mem
 10. Run the command **uname -a**. ***(1 mark)*** 
 Linux codespaces-ce7b13 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 11. What is the available free memory in the system. ***(1 mark)***
-291.3 MiB
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+297 Mi
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+1K-blocks
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+Linux Distribution: Ubuntu 22.04.1 LTS Kernel Version: 6.5.0-1021-azure Hardware Architecture: x86_64 (64-bit)
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls lists the names of files and directories in the current directory while ls -asl lists all files (including hidden ones) in a detailed format with file sizes.__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __3243.160__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __node process with PID 2352__.
 
 ## Running your own container instance.
 
