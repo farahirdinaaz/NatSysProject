@@ -381,8 +381,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __No. Because containers are designed to be ephemeral and stateless. When a container is removed, its filesystem is also deleted along with all the data stored inside it. __.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes__.
 
 ## Running your own container with persistent storage
 
@@ -435,8 +435,8 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)***
-3. What port is open for http protocol on the host machine? ***(1 mark)***
+2. What port is the apache web server running. ***(1 mark)*** port 80
+3. What port is open for http protocol on the host machine? ***(1 mark)*** port 8080
 
 ## Create SUB Networks
 
